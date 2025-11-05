@@ -27,10 +27,10 @@ const navData = [
     url: "/blog",
     children: []
   },
-  {
-    key: "contact",
-    url: "/contact",
-    children: []
-  },
+  // {
+  //   key: "contact",
+  //   url: "/contact",
+  //   children: []
+  // },
 ]
 export default navData
