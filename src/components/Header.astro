@@ -576,6 +576,8 @@ import { getLocalePath, t } from "i18n:astro";
         .cs-li-link {
           position: relative;
           transition: opacity 0.3s;
+          background: none;
+          border: none;
         }
       }
 
@@ -649,6 +651,7 @@ import { getLocalePath, t } from "i18n:astro";
         width: (15/16rem);
         height: auto;
         display: inline-block;
+        transform: rotate(180deg);
       }
 
       .cs-drop-ul {
@@ -864,6 +867,8 @@ import { getLocalePath, t } from "i18n:astro";
         position: relative;
         z-index: 1;
         transition: color 0.3s;
+        background: none;
+        border: none;
 
         &:before {
           /* on scroll background */
