@@ -10,6 +10,7 @@ import Hero from "@components/Hero.astro";
 
 import { getOptimizedImage } from "@utils/utils";
 import mobileLandingImage from "@assets/images/hero-m.jpg"; // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+import AboutSection from "@components/AboutSection.astro";
 const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage);
 ---
 
@@ -20,6 +21,7 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage);
 >
   <Hero />
   <Services />
+  <AboutSection />
   <GalleryHero />
   <CTA />
 </BaseLayout>
