@@ -1,30 +1,30 @@
 const navData = [
   {
-    key: "home",
-    url: "/",
-    children: []
-  },
-  {
     key: "about",
     url: "/about",
     children: []
   },
   {
-    key: "projects",
+    key: "gallery",
+    url: "/gallery",
+    children: []
+  },
+  {
+    key: "services",
     children: [
       {
         key: "project-1",
-        url: "/projects/project-1/"
+        url: "/services/project-1/"
       },
       {
         key: "project-2",
-        url: "/projects/project-2/"
-      }
+        url: "/services/project-2/"
+      },
     ]
   },
   {
-    key: "blog",
-    url: "/blog",
+    key: "prices",
+    url: "/prices",
     children: []
   },
   // {
