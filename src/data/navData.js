@@ -1,5 +1,10 @@
 const navData = [
   {
+    key: "home",
+    url: "/",
+    children: []
+  },
+  {
     key: "about",
     url: "/about",
     children: []
