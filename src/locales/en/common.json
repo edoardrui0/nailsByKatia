@@ -1,9 +1,10 @@
 {
     "home": "Home",
     "about": "About",
-    "projects": "Projects",
-    "project-1": "Project 1",
-    "project-2": "Project 2",
+    "services": "Projects",
+    "service-1": "Gel-X",
+    "service-2": "Builder Gel",
+    "service-3": "Deluxe Pedicure",
     "blog": "Blog",
     "contact": "Contact",
     "theme-label": "Choisissez le thème",

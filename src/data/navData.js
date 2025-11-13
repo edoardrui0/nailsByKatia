@@ -18,12 +18,16 @@ const navData = [
     key: "services",
     children: [
       {
-        key: "project-1",
-        url: "/services/project-1/"
+        key: "gel-x",
+        url: "/services/gel-x/"
       },
       {
-        key: "project-2",
-        url: "/services/project-2/"
+        key: "builder-gel",
+        url: "/services/builder-gel/"
+      },
+      {
+        key: "deluxe-pedicure",
+        url: "/services/deluxe-pedicure/"
       },
     ]
   },
