@@ -6,6 +6,10 @@ import { getOptimizedImage } from "@utils/utils";
 // Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Hero (for rendering)
 import landingImage from "@assets/images/hero.jpg"; // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
 import mobileLandingImage from "@assets/images/hero-m.jpg"; // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+import gel from "@assets/images/hero-page/gel-x.jpeg";
+import builder from "@assets/images/hero-page/builder-gel.jpeg";
+import pedicure from "@assets/images/hero-page/pedicure.jpeg";
+import rubber from "@assets/images/hero-page/rubber.jpeg";
 const optimizedLandingImage = await getOptimizedImage(landingImage);
 const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage);
 ---
@@ -67,21 +71,16 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage);
                     </div>
                 </a>
                 <picture class="cs-item-background">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/dental-care.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/dental-care.jpg"
-                    />
+                    <source media="(max-width: 600px)" srcset={gel.src} />
+                    <source media="(min-width: 601px)" srcset={gel.src} />
                     <img
                         decoding="async"
-                        src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/dental-care.jpg"
+                        src={gel.src}
                         alt="healthcare patient"
                         width="455"
                         height="337"
                         aria-hidden="true"
+                        loading="eager"
                     />
                 </picture>
             </li>
@@ -106,21 +105,16 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage);
                     </div>
                 </a>
                 <picture class="cs-item-background">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/skin-care.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/skin-care.jpg"
-                    />
+                    <source media="(max-width: 600px)" srcset={builder.src} />
+                    <source media="(min-width: 601px)" srcset={builder.src} />
                     <img
                         decoding="async"
-                        src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/skin-care.jpg"
+                        src={builder.src}
                         alt="healthcare patient"
                         width="455"
                         height="337"
                         aria-hidden="true"
+                        loading="eager"
                     />
                 </picture>
             </li>
@@ -145,21 +139,16 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage);
                     </div>
                 </a>
                 <picture class="cs-item-background">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/cardio-care.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/cardio-care.jpg"
-                    />
+                    <source media="(max-width: 600px)" srcset={pedicure.src} />
+                    <source media="(min-width: 601px)" srcset={pedicure.src} />
                     <img
                         decoding="async"
-                        src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/cardio-care.jpg"
+                        src={pedicure.src}
                         alt="healthcare patient"
                         width="455"
                         height="337"
                         aria-hidden="true"
+                        loading="eager"
                     />
                 </picture>
             </li>
@@ -184,21 +173,16 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage);
                     </div>
                 </a>
                 <picture class="cs-item-background">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/eye-care.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/eye-care.jpg"
-                    />
+                    <source media="(max-width: 600px)" srcset={rubber.src} />
+                    <source media="(min-width: 601px)" srcset={rubber.src} />
                     <img
                         decoding="async"
-                        src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/eye-care.jpg"
+                        src={rubber.src}
                         alt="healthcare patient"
                         width="455"
                         height="337"
                         aria-hidden="true"
+                        loading="eager"
                     />
                 </picture>
             </li>
