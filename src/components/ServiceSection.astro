@@ -2,16 +2,14 @@
 import { getLocalePath, t } from "i18n:astro";
 ---
 
-<!-- {getLocalePath("/about")} --><!-- Side By Side -->
+<!-- Side By Side -->
 <section id="sbs-1984">
   <div class="cs-container">
     <div class="cs-content">
-      <span class="cs-topper">Dental Care For Everyone</span>
-      <h2 class="cs-title">Smiles More Radiant and Healthy is Our Passion</h2>
+      <!-- <span class="cs-topper">{t("services:content.title")}</span> -->
+      <h2 class="cs-title">{t("home:bookKatia.sbs-1984.title")}</h2>
       <p class="cs-text">
-        Orci eu lobortis elementum nibh tellus. Vulputate eu scelerisque felis
-        imperdiet proin fermentum leo vel. Luctus accumsan tortor posuere ac ut
-        consequat semper. Et pharetra pharetra massa massa ultricies mi quis.
+        {t("home:bookKatia.sbs-1984.p1")}
       </p>
       <ul class="cs-ul">
         <li class="cs-li">
@@ -25,7 +23,7 @@ import { getLocalePath, t } from "i18n:astro";
             width="20"
             height="20"
           />
-          Our focus is on your overall well-being.
+          {t("home:bookKatia.sbs-1984.bullets.1")}
         </li>
         <li class="cs-li">
           <img
@@ -38,7 +36,7 @@ import { getLocalePath, t } from "i18n:astro";
             width="20"
             height="20"
           />
-          We provide quality dental care.
+          {t("home:bookKatia.sbs-1984.bullets.2")}
         </li>
         <li class="cs-li">
           <img
@@ -51,7 +49,20 @@ import { getLocalePath, t } from "i18n:astro";
             width="20"
             height="20"
           />
-          Innovative therapy & qualified dentists.
+          {t("home:bookKatia.sbs-1984.bullets.3")}
+        </li>
+        <li class="cs-li">
+          <img
+            class="cs-icon"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/teal-check.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
+          />
+          {t("home:bookKatia.sbs-1984.bullets.4")}
         </li>
       </ul>
       <a href={getLocalePath("/contact")} class="cs-button-solid">Get Started</a
@@ -167,14 +178,18 @@ import { getLocalePath, t } from "i18n:astro";
     </div>
     <!-- Right Content Section-->
     <div class="cs-right">
-      <span class="cs-topper">{t("home:extra.topper")}</span>
-      <h2 class="cs-title">{t("home:extra.title")}</h2>
+      <!-- <span class="cs-topper">{t("home:extra.topper")}</span> -->
+      <h2 class="cs-title">{t("home:bookKatia.sbs-r.title")}</h2>
       <p class="cs-text">
-        {t("home:extra.p1")}
+        {t("home:bookKatia.sbs-r.description")}
       </p>
-      <p class="cs-text">
-        {t("home:extra.p2")}
-      </p>
+      <ul>
+        <li>{t("home:bookKatia.sbs-r.steps.1")}</li>
+        <li>{t("home:bookKatia.sbs-r.steps.2")}</li>
+        <li>{t("home:bookKatia.sbs-r.steps.3")}</li>
+      </ul>
+      <a href={getLocalePath("/contact")} class="cs-button-solid">Get Started</a
+      >
     </div>
   </div>
 </section>
@@ -400,6 +415,47 @@ import { getLocalePath, t } from "i18n:astro";
   @media only screen and (min-width: 0em) {
     #sbs-r {
       padding: var(--sectionPadding);
+
+      .cs-button-solid {
+        font-size: (16/16rem);
+        font-weight: 700;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        margin: 0;
+        /* 32px - 48px */
+        padding: 0 clamp(2rem, 4vw, 3rem);
+        background-color: var(--primary);
+        overflow: hidden;
+        color: #fff;
+        border-radius: (8/16rem);
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        transition: color 0.3s;
+
+        &:before {
+          content: "";
+          width: 0%;
+          height: 100%;
+          background: #1a1a1a;
+          opacity: 1;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: width 0.3s;
+        }
+
+        &:hover {
+          color: #fff;
+
+          &:before {
+            width: 100%;
+          }
+        }
+      }
 
       .cs-container {
         width: 100%;

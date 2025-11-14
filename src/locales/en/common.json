@@ -1,7 +1,7 @@
 {
     "home": "Home",
     "about": "About",
-    "services": "Projects",
+    "services": "Services",
     "service-1": "Gel-X",
     "service-2": "Builder Gel",
     "service-3": "Deluxe Pedicure",
@@ -22,10 +22,10 @@
     "quote": "Get Free Quote",
     "estimate": "Get an estimate now",
     "ctaComponent": {
-        "title": "Get it done",
-        "subtitle": "With us today",
-        "message": "Say something catchy, informative, and encouraging to click the button to go to the contact page. I like to add these to the bottom of all pages.",
-        "cta": "Get an estimate now",
+        "title": "Ready For Nails That Last",
+        "message": "Whether you want a fresh Gel X set, a builder gel manicure, or a deluxe pedicure, Katia is ready to plan a service around you. Share what you are looking for and lock in your spot.",
+        "cta1": "Message To Schedule",
+        "cta2": "View Prices",
         "alt": ""
     },
     "about-page": {

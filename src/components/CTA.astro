@@ -11,18 +11,18 @@ import fallbackImage from "@assets/images/CTA/cabinets2.jpg";
 <section id="cta-2372">
   <div class="cs-container">
     <div class="cs-content">
-      <h2 class="cs-title">Start Your Journey Towards Success Today</h2>
+      <h2 class="cs-title">{t("ctaComponent.title")}</h2>
       <p class="cs-text">
-        Receive expert support and compassionate care tailored to your needs,
-        along with a personalized therapy plan designed to fit seamlessly into
-        your life.
+        {t("ctaComponent.message")}
       </p>
     </div>
     <div class="cs-button-container">
       <a href={getLocalePath("/contact")} class="cs-button-solid"
-        >Get in contact</a
+        >{t("ctaComponent.cta1")}</a
       >
-      <a href={getLocalePath("/prices")} class="cs-button-solid">prices</a>
+      <a href={getLocalePath("/prices")} class="cs-button-solid"
+        >{t("ctaComponent.cta2")}</a
+      >
     </div>
 
     <CSPicture

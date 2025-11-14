@@ -6,47 +6,63 @@
 	"hero": {
 		"topper": "Premium Care",
 		"title": {
-			"1": "We Provide Top Quality Healthcare"
+			"1": "Nails That Stay Beautiful Longer"
 		},
-		"p1": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+		"p1": "Gel X, builder gel, and deluxe pedicures in a clean, private studio in Tampa.",
 		"cta": "Schedule Appointment"
 	},
-	"services": [
+	"4servicePanel": [
 		{
-			"heading": "Service 1",
-			"p": "Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences."
+			"heading": "Gel X Extensions",
+			"p": "Lightweight extensions that give you instant length with a natural look. Ideal for clients who want a thin, comfortable feel that still holds up to everyday wear."
 		},
 		{
-			"heading": "Service 2",
-			"p": "Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences."
+			"heading": "Builder Gel Manicure",
+			"p": "Builder gel adds strength and structure so your natural nails can grow without constant breaks. Finished with your choice of gel color and careful cuticle work."
 		},
 		{
-			"heading": "Service 3",
-			"p": "Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences."
+			"heading": "Deluxe Pedicure",
+			"p": "A relaxing pedicure focused on both comfort and results. Detailed prep, smoothing, and polish for feet that feel refreshed and look polished longer."
 		},
 		{
-			"heading": "Service 4",
-			"p": "Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences."
+			"heading": "Rubber Base And Gel Polish",
+			"p": "Perfect for clients who want a thin, flexible base with long lasting shine. Great for everyday wear, simple designs, and keeping natural nails protected."
 		}
 	],
+  "bookKatia": {
+    "sbs-1984": {
+	  	"title": "Why Clients Book With Nails By Katia",
+	  	"p1": "Katia first started doing nails when regular salon visits were not in the budget. Learning how to create beautiful nails at home showed her how important it is to have quality nail care that does not feel out of reach. Nails By Katia grew out of that idea. A small private studio in Tampa where clients can enjoy clean, detailed, creative nail services without feeling rushed or overlooked.",
+	  	"bullets": {
+	  		"1": "Careful attention to detail so nails look clean from every angle",
+	  		"2": "Tools, workspaces, and hands kept clean every appointment",
+	  		"3": "A calm, friendly environment where you can actually enjoy the appointment",
+	  		"4": "Clear communication, so you always know what to expect and ask for exactly what you want"
+	  	},
+	  	"cta": "Schedule Appointment"
+	  },
+    "sbs-r": {
+      "title": "How Scheduling With Katia Works",
+      "description": "Booking is kept simple on purpose. You reach out, share what you are looking for, and Katia confirms a time that fits your schedule.",
+      "steps": {
+        "1": "Send a message with the service you want and a few preferred dates.",
+        "2": "Receive confirmation with your appointment time, service details, and any prep notes.",
+        "3": "Enjoy your appointment at the studio in Tampa and leave with nails that feel fresh and finished."
+      }
+    }
+  },
 	"about": {
-		"topper": "About Us",
-		"title": "About Company Title",
-		"p1": "Our company was created In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.",
-		"p2": "We believe that In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.",
-		"p3": "It's important In consequat tincidunt turpis sit amet imperdiet.",
-		"rank": "CEO-Founder",
-		"cta": "More about us"
+		"topper": "Meet Katia",
+		"title": "From At Home Practice To A Tampa Nail Studio",
+		"p1": "Katia first started doing nails when regular salon visits were not in the budget. Learning how to create beautiful nails at home showed her how important it is to have quality nail care that does not feel out of reach.",
+		"p2": "Nails By Katia grew out of that idea. A small private studio in Tampa where clients can enjoy clean, detailed, creative nail services without feeling rushed or overlooked.",
+		"quote": "“I want every appointment to feel calm, detailed, and personal, so you leave with nails that truly fit you.”"
 	},
-	"extra": {
-		"topper": "SEO Ranking",
-		"title": "Talk about a main service keyword",
-		"p1": "Our main service In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.",
-		"p2": "Research shows that In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per."
-	},
-	"portfolio": {
-		"topper": "Our Portfolio",
-		"title": "Et orci volutpat, back up generator installations",
-		"cta": "View Our Products"
-	}
+  "gallery": {
+    "topper": "Our Specialization",
+    "title": "A Studio Built Around Client Comfort",
+    "p1": "Nails By Katia specializes in Gel X, builder gel manicures, and deluxe pedicures, with support services like rubber base, dip, gel polish, and regular polish. The goal is to match the right product to each client so nails stay strong, comfortable, and polished.",
+    "p2": "Appointments are booked with enough time for careful prep and conversation, not rushed turnover. From the moment you sit down, the focus is on your comfort, your style, and making sure you leave feeling put together.",
+    "cta": "Click to See Our Gallery"
+  }
 }

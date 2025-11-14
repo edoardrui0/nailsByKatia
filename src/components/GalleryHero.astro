@@ -141,20 +141,18 @@ import { getLocalePath, t } from "i18n:astro";
       </picture>
     </div>
     <div class="cs-content">
-      <span class="cs-topper">Our Spesialization</span>
+      <span class="cs-topper">{t("home:gallery.topper")}</span>
       <h2 class="cs-title">
-        We have extensive experience in building custom homes.
+        {t("home:gallery.title")}
       </h2>
       <p class="cs-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolorem
-        quod ex nobis? Blanditiis labore magnam modi doloribus provident
-        accusantium a corporis. Unde deserunt magnam dolorem ducimus velit,
-        labore voluptates. Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit. Minima dolorem quod ex nobis? Blanditiis labore magnam modi
-        doloribus provident accusantium a corporis. Unde deserunt magnam dolorem
-        ducimus velit, labore voluptates.
+        {t("home:gallery.p1")}
+        <br /><br />
+        {t("home:gallery.p2")}
       </p>
-      <a href="" class="cs-button-solid">Learn More</a>
+      <a href={getLocalePath("/gallery")} class="cs-button-solid"
+        >{t("home:gallery.cta")}</a
+      >
     </div>
   </div>
 </section>

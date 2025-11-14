@@ -1,0 +1,23 @@
+{
+	"sbs-1984": {
+		"title": "Why Clients Book With Nails By Katia",
+		"p1": "Katia first started doing nails when regular salon visits were not in the budget. Learning how to create beautiful nails at home showed her how important it is to have quality nail care that does not feel out of reach. Nails By Katia grew out of that idea. A small private studio in Tampa where clients can enjoy clean, detailed, creative nail services without feeling rushed or overlooked.",
+		"bullets": {
+			"1": "Careful attention to detail so nails look clean from every angle",
+			"2": "Tools, workspaces, and hands kept clean every appointment",
+			"3": "A calm, friendly environment where you can actually enjoy the appointment",
+			"4": "Clear communication, so you always know what to expect and ask for exactly what you want"
+		},
+		"cta": "Schedule Appointment"
+	},
+  "sbs-r": {
+    "title": "How Scheduling With Katia Works",
+    "description": "Booking is kept simple on purpose. You reach out, share what you are looking for, and Katia confirms a time that fits your schedule.",
+    "steps": {
+      "1": "Send a message with the service you want and a few preferred dates.",
+      "2": "Receive confirmation with your appointment time, service details, and any prep notes.",
+      "3": "Enjoy your appointment at the studio in Tampa and leave with nails that feel fresh and finished."
+    }
+  }
+}
+
