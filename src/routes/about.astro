@@ -15,9 +15,7 @@ const optimizedImage = await getOptimizedImage(landingImage);
   description="Meta description for the page"
   preloadedImage={optimizedImage}
 >
-  <!-- ============================================ -->
-  <!--                    Banner                   -->
-  <!-- ============================================ -->
+  <!-- Banner -->
 
   <Landing title={t("about-page.landing")} image={optimizedImage} />
 
@@ -46,28 +44,21 @@ const optimizedImage = await getOptimizedImage(landingImage);
           />
         </picture>
         <div class="cs-content">
-          <span class="cs-header">Katia Santana</span>
+          <span class="cs-topper">About Nails By Katia</span>
+          <h1 class="cs-header">Katia Santana</h1>
           <p class="cs-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo
-            in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil
-            ipsam voluptas, sapiente doloribus facere earum vitae provident!
-            Aperiam modi cupiditate facere eos consectetur illo necessitatibus.
-            Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat
-            totam recusandae eum voluptas quisquam harum accusantium blanditiis,
-            reprehenderit, a aperiam nihil. Doloremque eius placeat alias
-            excepturi esse cupiditate? Illum iure reprehenderit expedita,
-            incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+            Nails By Katia is a private nail studio in Tampa, Florida, offering
+            affordable, creative, and relaxing nail services. The focus is on
+            detailed work, clean tools, and products that treat your nails with
+            care, so every set feels as good as it looks.
             <br />
             <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in
-            tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam
-            voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi
-            cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti
-            molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum
-            voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam
-            nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum
-            iure reprehenderit expedita, incidunt optio non quae harum molestiae
-            quas sit. Dicta, ullam tempo
+            Katia first started doing nails because regular salon visits were not
+            always in the budget. Learning how to do her own nails showed her how
+            much difference clean prep, the right products, and proper time can make,
+            especially when price is a concern. That experience shaped Nails By Katia.
+            A space where clients can enjoy quality manicures and pedicures without
+            giving up comfort or safety.
           </p>
           <!--Floating Graphic-->
           <img
@@ -81,6 +72,46 @@ const optimizedImage = await getOptimizedImage(landingImage);
             height="197"
           />
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section id="quote-1890">
+    <div class="cs-container">
+      <div class="cs-item">
+        <p class="cs-review">
+          My goal is to give you nails that match your style and hold up to your
+          day to day life, not just look nice for a photo.
+        </p>
+        <div class="cs-flex-group">
+          <picture class="cs-picture">
+            <img
+              class="cs-profile"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot1.jpeg"
+              decoding="async"
+              alt="profile"
+              width="52"
+              height="52"
+              aria-hidden="true"
+              loading="lazy"
+            />
+          </picture>
+          <span class="cs-name">
+            Katia Santana
+            <span class="cs-job">Owner of Nails by Katia</span>
+          </span>
+        </div>
+        <!--Quote Icon-->
+        <img
+          class="cs-quote"
+          aria-hidden="true"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/beige-quote.svg"
+          decoding="async"
+          alt="quote icon"
+          width="86"
+          height="72"
+        />
       </div>
     </div>
   </section>
@@ -330,6 +361,183 @@ const optimizedImage = await getOptimizedImage(landingImage);
 
         .cs-text {
           opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  /*-- -------------------------- -->
+<!--           Quote            -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #quote-1890 {
+      padding: var(--sectionPadding);
+      /* 340px - 660px */
+      // padding-top: clamp(21.25rem, 49vw, 41.25rem);
+      background-color: #faf6f2;
+      overflow-x: clip;
+      position: relative;
+
+      .cs-container {
+        width: 100%;
+        /* changes to 1280px at desktop */
+        max-width: (704/16rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cs-item {
+        text-align: center;
+        width: 100%;
+        /* prevents padding from adding to height and width */
+        box-sizing: border-box;
+        /* 60px - 120px top, & 80px bottom */
+        /* 24px - 80px left & right */
+        padding: clamp(3.75rem, 8vw, 7.5rem) clamp(1.5rem, 6vw, 5rem)
+          clamp(2rem, 6vw, 5rem);
+        background-color: #ffffff;
+        border-radius: (40/16rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* 32px - 40px */
+        gap: clamp(2rem, 4vw, 2.5rem);
+        position: relative;
+        z-index: 1;
+      }
+
+      .cs-review {
+        /* 31px - 39px */
+        font-size: clamp(1.9375rem, 4vw, 2.4375rem);
+        font-weight: 900;
+        line-height: 1.2em;
+        margin: 0;
+        color: var(--headerColor);
+        z-index: 1;
+      }
+
+      .cs-flex-group {
+        text-align: left;
+        /* this margin top auto will push everything up and force the cs-flex-group to the bottom of the container. This is to account for review cards with different heights because of more or less text and makes the cards more responsive to changing text */
+        margin-top: auto;
+        display: flex;
+        align-items: flex-start;
+        gap: (12/16rem);
+      }
+
+      .cs-profile {
+        width: (52/16rem);
+        height: auto;
+        border-radius: 50%;
+        display: block;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          /* makes the image behave like a background image */
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .cs-name {
+        /* 20px - 25px */
+        font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+        font-weight: 700;
+        line-height: 1.2em;
+        margin: 0;
+        /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+        margin-top: auto;
+        color: var(--secondary);
+        display: block;
+      }
+
+      .cs-job {
+        font-size: (16/16rem);
+        font-weight: 400;
+        line-height: 1.5em;
+        margin: 0;
+        color: var(--bodyTextColor);
+        display: block;
+      }
+
+      .cs-quote {
+        /* 74px - 144px */
+        width: clamp(4.625rem, 9vw, 9rem);
+        height: auto;
+        position: absolute;
+        left: 50%;
+        /* 32px - 80px */
+        top: clamp(2rem, 6vw, 5rem);
+        z-index: -1;
+        transform: translateX(-50%);
+      }
+
+      .cs-background {
+        width: 100%;
+        height: 45%;
+        min-height: (420/16rem);
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        img {
+          width: 100%;
+          height: 100%;
+          /* makes image act as a background image */
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #quote-1890 {
+      .cs-container {
+        max-width: (1280/16rem);
+      }
+
+      .cs-background {
+        height: clamp(56.7%, 60vw, 65%);
+      }
+    }
+  }
+
+  /* Dark Mode */
+  @media only screen and (min-width: 0rem) {
+    body.dark-mode {
+      #quote-1890 {
+        background-color: rgba(0, 0, 0, 0.2);
+
+        .cs-item {
+          background-color: var(--medium);
+        }
+
+        .cs-review,
+        .cs-job {
+          color: var(--bodyTextColorWhite);
+        }
+
+        .cs-job {
+          opacity: 0.8;
+        }
+
+        .cs-quote {
+          filter: invert(1);
         }
       }
     }

@@ -15,316 +15,419 @@ const optimizedImage = await getOptimizedImage(landingImage);
   description="Meta description for the page"
   preloadedImage={optimizedImage}
 >
-  <!-- ============================================ -->
-  <!--                    LANDING                   -->
-  <!-- ============================================ -->
+  <!-- Landing -->
 
   <Landing title={t("service-3")} image={optimizedImage} />
 
-  <!-- ============================================ -->
-  <!--                   Gallery                    -->
-  <!-- ============================================ -->
+  <!-- Service Info -->
 
-  <section id="gallery">
+  <section id="sbs-1980">
     <div class="cs-container">
-      <div class="cs-image-group">
-        <!-- Row 1-->
-        <div class="cs-row cs-row-1">
-          <picture class="cs-picture cs-picture1">
+      <div class="cs-content">
+        <span class="cs-topper">Deluxe Pedicures For Tired Feet</span>
+        <h2 class="cs-title">
+          Treat your feet to a deluxe pedicure that softens skin, refreshes
+          tired soles, tidies every detail, and leaves each step feeling lighter
+          and more relaxed
+        </h2>
+        <p class="cs-text">
+          This deluxe pedicure is designed to be both relaxing and practical.
+          Detailed foot care, cuticle work, and polish come together to leave
+          your feet feeling lighter and looking fresh. Katia takes time to
+          smooth rough areas, tidy each toe, and apply polish with care so the
+          result feels neat and finished. It is an ideal choice if your feet
+          feel tired, you spend a lot of time on them, or you simply want them
+          to look clean and presentable in open shoes.
+        </p>
+      </div>
+      <div class="cs-wrapper">
+        <ul class="cs-ul">
+          <li class="cs-li">
+            <img
+              class="cs-li-icon"
+              aria-hidden="true"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/tooth-gum.svg"
+              decoding="async"
+              alt="icon"
+              width="80"
+              height="80"
+              loading="lazy"
+            />
+            <div class="cs-flex">
+              <h3 class="cs-h3">Detailed Prep</h3>
+              <p class="cs-li-text">
+                Thorough clean up and prep for toes and feet. The focus is on
+                getting everything tidy before polish goes on.
+              </p>
+            </div>
+          </li>
+          <li class="cs-li">
+            <img
+              class="cs-li-icon"
+              aria-hidden="true"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/braces-rubber-bands.svg"
+              decoding="async"
+              alt="icon"
+              width="80"
+              height="80"
+              loading="lazy"
+            />
+            <div class="cs-flex">
+              <h3 class="cs-h3">Polished Finish</h3>
+              <p class="cs-li-text">
+                Smoothing and tidying for a polished look. Great if you want
+                your feet to look as good as they feel in sandals or open shoes.
+              </p>
+            </div>
+          </li>
+          <li class="cs-li">
+            <img
+              class="cs-li-icon"
+              aria-hidden="true"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/tooth-loosen.svg"
+              decoding="async"
+              alt="icon"
+              width="80"
+              height="80"
+              loading="lazy"
+            />
+            <div class="cs-flex">
+              <h3 class="cs-h3">Polish Choice</h3>
+              <p class="cs-li-text">
+                Gel or regular polish based on your preference. You can choose
+                longer wear or a classic look that is easy to change.
+              </p>
+            </div>
+          </li>
+          <li class="cs-li">
+            <img
+              class="cs-li-icon"
+              aria-hidden="true"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/crown-tooth.svg"
+              decoding="async"
+              alt="icon"
+              width="80"
+              height="80"
+              loading="lazy"
+            />
+            <div class="cs-flex">
+              <h3 class="cs-h3">Quiet Appointment</h3>
+              <p class="cs-li-text">
+                A quiet, relaxing appointment in Tampa. The goal is to give you
+                a break while your feet get the care they need.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="cs-image-group">
+          <!--Image-->
+          <picture class="cs-picture">
             <source
               media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port1-m.jpg"
+              srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dental-cleaning.jpeg"
             />
             <source
               media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port1.jpg"
+              srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dental-cleaning.jpeg"
             />
             <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port1.jpg"
-              alt="new hallway"
               loading="lazy"
-              width="400"
-              height="560"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dental-cleaning.jpeg"
+              alt="dental cleaning"
+              width="704"
+              height="752"
+              aria-hidden="true"
             />
           </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port4-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port4.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port4.jpg"
-              alt="new home construction"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port7-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port7.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port7.jpg"
-              alt="building a new wall"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-        </div>
-        <!-- Row 2 -->
-        <div class="cs-row cs-row-2">
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port2-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port2.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port2.jpg"
-              alt="new kitchen"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port5-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port5.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port5.jpg"
-              alt="apartment addition"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port8-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port8.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port8.jpg"
-              alt="kew kitchen cabinets"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-        </div>
-        <!-- Row 3 -->
-        <div class="cs-row cs-row-3">
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port3-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port3.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port3.jpg"
-              alt="new kitchen"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port6-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port6.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port6.jpg"
-              alt="apartment addition"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port9-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port9.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port9.jpg"
-              alt="kew kitchen cabinets"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
         </div>
       </div>
-      <a href={getLocalePath("/contact")} class="cs-button-solid"
-        >{t("ctaComponent.cta")}</a
-      >
     </div>
   </section>
   <CTA />
 </BaseLayout>
 
 <style lang="less">
-  /* PAGE-SPECIFIC STYLES FOR THE PROJECTS PAGE */
-
   /*-- -------------------------- -->
-<---          Gallery           -->
+<---       Side by Side         -->
 <--- -------------------------- -*/
 
-  /* Mobile - 360px - Contains hover animation */
-  @media only screen and (min-width: 0em) {
-    #gallery {
-      /* Centers button */
-      text-align: center;
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #sbs-1980 {
       padding: var(--sectionPadding);
-      position: relative;
-      /* Prevents overflow from the image going off screen */
       overflow: hidden;
+      position: relative;
+
       .cs-container {
         width: 100%;
-        max-width: (1322/16em);
+        max-width: (704/16rem);
         margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+      }
+
+      .cs-content {
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cs-title,
+      .cs-text {
+        max-width: none;
+      }
+
+      .cs-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+      }
+
+      .cs-ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: (32/16rem);
+      }
+
+      .cs-li {
+        list-style: none;
+        margin: 0;
+        /* 24px - 32px */
+        padding: 0 0 (32/16rem) 0;
+        border-bottom: 1px solid var(--primaryLight);
+        display: flex;
+        align-items: flex-start;
+        gap: (32/16rem);
+
+        &:last-of-type {
+          padding: 0;
+          border: none;
+        }
+      }
+
+      .cs-li-icon {
+        /* 64px - 80px */
+        width: clamp(4rem, 8vw, 5rem);
+        height: auto;
+        display: block;
+      }
+
+      .cs-h3 {
+        /* 20px - 25px */
+        font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+        font-weight: 700;
+        line-height: 1.2em;
+        text-align: left;
+        margin: 0 0 (16/16rem) 0;
+        color: var(--headerColor);
+        transition: color 0.3s;
+      }
+
+      .cs-li-text {
+        font-size: (16/16rem);
+        line-height: 1.5em;
+        text-align: left;
+        margin: 0;
+        color: var(--bodyTextColor);
+        opacity: 0.8;
       }
 
       .cs-image-group {
-        /* used rem so it doesn't scale with the font size of on parent */
-        font-size: ~"min(1.1vw, 1em)";
         width: 100%;
-        max-width: (1322/16em);
-        margin: 0 auto (60/16rem);
-        padding: 0;
-        display: flex;
+        height: (680/16rem);
+        max-height: (752/16rem);
+        position: relative;
+        z-index: 1;
+      }
+
+      .cs-box {
+        text-align: left;
+        width: 100%;
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
+        /* 20px - 40px */
+        padding: (24/16rem);
+        border-top: 32px solid #fff;
+        display: inline-flex;
+        flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        gap: (30/16em);
-      }
+        gap: (8/16rem);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
 
-      .cs-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: (30/16em);
-      }
-
-      .cs-picture {
-        display: block;
-        position: relative;
-        img {
+        &:before {
+          content: "";
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          background-color: var(--primaryLight);
           position: absolute;
           top: 0;
           left: 0;
         }
       }
 
-      .cs-row-1 {
-        .cs-picture1 {
-          width: (420/16em);
-          height: (567/16em);
-        }
-
-        .cs-picture2 {
-          width: (420/16em);
-          height: (629/16em);
-        }
-
-        .cs-picture3 {
-          width: (420/16em);
-          height: (512/16em);
-        }
+      .cs-topper {
+        z-index: 1;
       }
 
-      .cs-row-2 {
-        .cs-picture1 {
-          width: (420/16em);
-          height: (492/16em);
-        }
-
-        .cs-picture2 {
-          width: (420/16em);
-          height: (517/16em);
-        }
-
-        .cs-picture3 {
-          width: (420/16em);
-          height: (629/16em);
-        }
+      .cs-h2 {
+        font-size: (31/16rem);
+        font-weight: 900;
+        line-height: 1.2em;
+        margin: 0 0 (16/16rem) 0;
+        color: var(--headerColor);
+        position: relative;
+        z-index: 10;
       }
 
-      .cs-row-3 {
-        .cs-picture1 {
-          width: (420/16em);
-          height: (625/16em);
+      .cs-box-ul {
+        margin: 0;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: (8/16rem);
+      }
+
+      .cs-box-li {
+        /* 14px - 18px */
+        font-size: clamp(0.875rem, 1.3vw, 1.125rem);
+        line-height: 1.5em;
+        list-style: none;
+        margin: 0;
+        color: var(--bodyTextColor);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: (12/16rem);
+        position: relative;
+      }
+
+      .cs-icon {
+        /* 24px - 32px */
+        width: clamp(1.5rem, 3vw, 2rem);
+        height: auto;
+        display: block;
+      }
+
+      .cs-picture {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: (16/16rem);
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #sbs-1980 {
+      .cs-image-group {
+        height: clamp(36.25rem, 72.5vw, 47rem);
+      }
+
+      .cs-box {
+        width: 60%;
+        padding: clamp(2rem, 6vw, 3.75rem) clamp(1.5rem, 3vw, 2.5rem);
+        border-right: 32px solid #fff;
+      }
+    }
+  }
+
+  /* Small Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #sbs-1980 {
+      .cs-container {
+        max-width: (1280/16rem);
+      }
+
+      .cs-wrapper {
+        flex-direction: row;
+        align-items: stretch;
+      }
+
+      .cs-ul {
+        max-width: (440/16rem);
+        order: 2;
+      }
+
+      .cs-image-group {
+        height: auto;
+        max-height: 100%;
+        width: 55%;
+      }
+
+      .cs-box {
+        width: 80%;
+      }
+    }
+  }
+
+  /* Large Desktop - 1300px */
+  @media only screen and (min-width: 81.25rem) {
+    #sbs-1980 {
+      .cs-ul {
+        max-width: (478/16rem);
+      }
+
+      .cs-box {
+        width: 70%;
+      }
+    }
+  }
+
+  /* Dark Mode */
+  @media only screen and (min-width: 0rem) {
+    body.dark-mode {
+      #sbs-1980 {
+        background-color: var(--dark);
+
+        .cs-title,
+        .cs-text,
+        .cs-h3,
+        .cs-li-text {
+          color: var(--bodyTextColorWhite);
         }
 
-        .cs-picture2 {
-          width: (420/16em);
-          height: (452/16em);
+        .cs-li {
+          border-color: rgba(255, 255, 255, 0.2);
         }
 
-        .cs-picture3 {
-          width: (420/16em);
-          height: (629/16em);
+        .cs-text,
+        .cs-li-text {
+          opacity: 0.8;
+        }
+
+        .cs-box {
+          border-color: var(--dark);
         }
       }
     }

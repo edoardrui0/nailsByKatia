@@ -339,7 +339,7 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage);
                     height: 100%;
                     object-fit: cover;
                     /* makes the top of the image start at the top of the parent */
-                    object-position: top;
+                    // object-position: top;
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -378,15 +378,15 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage);
     @media only screen and (min-width: 100rem) {
         #hero-1957 {
             .cs-background {
-                background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/healthcare-people.png");
+                background: url("src/assets/images/hero.jpg");
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
                 /* creates the parallax effect */
                 background-attachment: fixed;
-                img {
-                    display: none;
-                }
+                // img {
+                //     display: none;
+                // }
             }
         }
     }
