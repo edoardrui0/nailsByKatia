@@ -1,5 +1,9 @@
 ---
 import { getLocalePath, t } from "i18n:astro";
+
+import top from "@assets/images/hero-page/serviceSection/top-nails.jpg";
+import middle from "@assets/images/hero-page/serviceSection/middle-nails.jpg";
+import bottom from "@assets/images/hero-page/serviceSection/bottom-nails.jpg";
 ---
 
 <!-- Side By Side -->
@@ -71,19 +75,13 @@ import { getLocalePath, t } from "i18n:astro";
     <div class="cs-image-group">
       <picture class="cs-picture">
         <!--Mobile Image-->
-        <source
-          media="(max-width: 600px)"
-          srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/smile1.jpg"
-        />
+        <source media="(max-width: 600px)" srcset={top.src} />
         <!--Tablet and above Image-->
-        <source
-          media="(min-width: 601px)"
-          srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/smile1.jpg"
-        />
+        <source media="(min-width: 601px)" srcset={top.src} />
         <img
           loading="lazy"
           decoding="async"
-          src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/smile1.jpg"
+          src={top.src}
           alt="person"
           width="547"
           height="180"
@@ -91,19 +89,13 @@ import { getLocalePath, t } from "i18n:astro";
       </picture>
       <picture class="cs-picture">
         <!--Mobile Image-->
-        <source
-          media="(max-width: 600px)"
-          srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/smile2.jpg"
-        />
+        <source media="(max-width: 600px)" srcset={middle.src} />
         <!--Tablet and above Image-->
-        <source
-          media="(min-width: 601px)"
-          srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/smile2.jpg"
-        />
+        <source media="(min-width: 601px)" srcset={middle.src} />
         <img
           loading="lazy"
           decoding="async"
-          src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/smile2.jpg"
+          src={middle.src}
           alt="person"
           width="547"
           height="180"
@@ -111,19 +103,13 @@ import { getLocalePath, t } from "i18n:astro";
       </picture>
       <picture class="cs-picture">
         <!--Mobile Image-->
-        <source
-          media="(max-width: 600px)"
-          srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/smile3.jpg"
-        />
+        <source media="(max-width: 600px)" srcset={bottom.src} />
         <!--Tablet and above Image-->
-        <source
-          media="(min-width: 601px)"
-          srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/smile3.jpg"
-        />
+        <source media="(min-width: 601px)" srcset={bottom.src} />
         <img
           loading="lazy"
           decoding="async"
-          src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/smile3.jpg"
+          src={bottom.src}
           alt="person"
           width="547"
           height="180"
@@ -133,6 +119,7 @@ import { getLocalePath, t } from "i18n:astro";
   </div>
 </section>
 
+<!-- Side By Side Reverse -->
 <section id="sbs-r">
   <div class="cs-container">
     <!-- Left Image Section -->
