@@ -1,5 +1,7 @@
 ---
 import { getLocalePath, t } from "i18n:astro";
+
+import katiaIMG from "@assets/images/katia.jpg";
 ---
 
 <!-- {t("home:extra.topper")} --><!-- {getLocalePath("/about")} --><!-- About -->
@@ -20,19 +22,13 @@ import { getLocalePath, t } from "i18n:astro";
         <div class="cs-flex">
             <picture class="cs-picture">
                 <!--Mobile Image-->
-                <source
-                    media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/cafe.jpg"
-                />
+                <source media="(max-width: 600px)" srcset={katiaIMG.src} />
                 <!--Tablet and above Image-->
-                <source
-                    media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/cafe.jpg"
-                />
+                <source media="(min-width: 601px)" srcset={katiaIMG.src} />
                 <img
                     loading="lazy"
                     decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/cafe.jpg"
+                    src={katiaIMG.src}
                     alt="person in cafe"
                     width="414"
                     height="627"
