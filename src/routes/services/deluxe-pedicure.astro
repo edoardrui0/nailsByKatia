@@ -7,6 +7,7 @@ import { getLocalePath, t } from "i18n:astro";
 // Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Landing (for rendering)
 import { getOptimizedImage } from "@utils/utils";
 import landingImage from "@assets/images/landing.jpg"; // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+import pedicureIMG from "@assets/images/services-page/pedicure.jpg";
 const optimizedImage = await getOptimizedImage(landingImage);
 ---
 
@@ -122,18 +123,12 @@ const optimizedImage = await getOptimizedImage(landingImage);
         <div class="cs-image-group">
           <!--Image-->
           <picture class="cs-picture">
-            <source
-              media="(max-width: 600px)"
-              srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dental-cleaning.jpeg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dental-cleaning.jpeg"
-            />
+            <source media="(max-width: 600px)" srcset={pedicureIMG.src} />
+            <source media="(min-width: 601px)" srcset={pedicureIMG.src} />
             <img
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dental-cleaning.jpeg"
+              src={pedicureIMG.src}
               alt="dental cleaning"
               width="704"
               height="752"

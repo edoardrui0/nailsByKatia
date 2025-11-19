@@ -5,21 +5,22 @@ import Landing from "@components/Landing.astro";
 import { t } from "i18n:astro";
 
 // Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Landing (for rendering)
-import {getOptimizedImage} from "@utils/utils"
-import landingImage from "@assets/images/landing.jpg" // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
-const optimizedImage = await getOptimizedImage(landingImage)
+import { getOptimizedImage } from "@utils/utils";
+import landingImage from "@assets/images/landing.jpg"; // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+import contactIMG from "@assets/images/contact.jpg";
+const optimizedImage = await getOptimizedImage(landingImage);
 ---
 
 <BaseLayout
   title={t("contact:landing")}
   description="Meta description for the page"
-  preloadedImage = {optimizedImage}
+  preloadedImage={optimizedImage}
 >
   <!-- ============================================ -->
   <!--                    LANDING                   -->
   <!-- ============================================ -->
 
-  <Landing title={t("contact:landing")} image={optimizedImage}/>
+  <Landing title={t("contact:landing")} image={optimizedImage} />
 
   <!-- ============================================ -->
   <!--                Contact Form                  -->
@@ -110,14 +111,11 @@ const optimizedImage = await getOptimizedImage(landingImage)
 
         <!-- Background Image-->
         <picture class="cs-bg-picture">
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/skyscraper.jpg"
-          />
+          <source media="(min-width: 601px)" srcset={contactIMG.src} />
           <img
             aria-hidden="true"
             decoding="async"
-            src="/assets/images/skyscraper.jpg"
+            src={contactIMG.src}
             alt="building"
             loading="lazy"
             width="2500"

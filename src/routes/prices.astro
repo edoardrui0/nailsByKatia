@@ -2,9 +2,13 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 import CTA from "@components/CTA.astro";
 import Landing from "@components/Landing.astro";
+
 import { t } from "i18n:astro"; // Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Landing (for rendering)
+
 import { getOptimizedImage } from "@utils/utils";
 import landingImage from "@assets/images/landing.jpg"; // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+import pricesIMG1 from "@assets/images/prices-page/prices-1.jpg";
+import pricesIMG2 from "@assets/images/prices-page/prices-2.jpg";
 const optimizedImage = await getOptimizedImage(landingImage);
 ---
 
@@ -65,19 +69,13 @@ const optimizedImage = await getOptimizedImage(landingImage);
       </div>
       <picture class="cs-picture">
         <!--Mobile Image-->
-        <source
-          media="(max-width: 600px)"
-          srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/salon3.jpg"
-        />
+        <source media="(max-width: 600px)" srcset={pricesIMG1.src} />
         <!--Tablet and above Image-->
-        <source
-          media="(min-width: 601px)"
-          srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/salon3.jpg"
-        />
+        <source media="(min-width: 601px)" srcset={pricesIMG1.src} />
         <img
           loading="lazy"
           decoding="async"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/salon3.jpg"
+          src={pricesIMG1.src}
           alt="hair salon"
           width="521"
           height="640"
@@ -94,7 +92,7 @@ const optimizedImage = await getOptimizedImage(landingImage);
     <div class="cs-container">
       <div class="cs-content">
         <span class="cs-topper">Pricing</span>
-        <h2 class="cs-title">All Hair Services</h2>
+        <h2 class="cs-title">Pedicures</h2>
         <!--Menu-->
         <ul class="cs-menu-group">
           <li class="cs-menu-item">
@@ -120,19 +118,13 @@ const optimizedImage = await getOptimizedImage(landingImage);
       </div>
       <picture class="cs-picture">
         <!--Mobile Image-->
-        <source
-          media="(max-width: 600px)"
-          srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/salon3.jpg"
-        />
+        <source media="(max-width: 600px)" srcset={pricesIMG2.src} />
         <!--Tablet and above Image-->
-        <source
-          media="(min-width: 601px)"
-          srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/salon3.jpg"
-        />
+        <source media="(min-width: 601px)" srcset={pricesIMG2.src} />
         <img
           loading="lazy"
           decoding="async"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/salon3.jpg"
+          src={pricesIMG2.src}
           alt="hair salon"
           width="521"
           height="640"
