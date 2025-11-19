@@ -4,6 +4,8 @@ import { getLocalePath, t } from "i18n:astro";
 import top from "@assets/images/hero-page/serviceSection/top-nails.jpg";
 import middle from "@assets/images/hero-page/serviceSection/middle-nails.jpg";
 import bottom from "@assets/images/hero-page/serviceSection/bottom-nails.jpg";
+import front from "@assets/images/hero-page/serviceSection/front-nails.jpg";
+import back from "@assets/images/hero-page/serviceSection/back-nails.jpg";
 ---
 
 <!-- Side By Side -->
@@ -125,18 +127,12 @@ import bottom from "@assets/images/hero-page/serviceSection/bottom-nails.jpg";
     <!-- Left Image Section -->
     <div class="cs-left">
       <picture class="cs-picture cs-picture1">
-        <source
-          media="(max-width: 600px)"
-          srcset="/assets/images/construction-m.jpg"
-        />
-        <source
-          media="(min-width: 601px)"
-          srcset="/assets/images/construction.jpg"
-        />
+        <source media="(max-width: 600px)" srcset={back.src} />
+        <source media="(min-width: 601px)" srcset={back.src} />
         <img
           aria-hidden="true"
           decoding="async"
-          src="/assets/images/construction.jpg"
+          src={back.src}
           alt="house"
           loading="lazy"
           width="400"
@@ -144,18 +140,12 @@ import bottom from "@assets/images/hero-page/serviceSection/bottom-nails.jpg";
         />
       </picture>
       <picture class="cs-picture cs-picture2">
-        <source
-          media="(max-width: 600px)"
-          srcset="/assets/images/cabinets2-m.jpg"
-        />
-        <source
-          media="(min-width: 601px)"
-          srcset="/assets/images/cabinets2.jpg"
-        />
+        <source media="(max-width: 600px)" srcset={front.src} />
+        <source media="(min-width: 601px)" srcset={front.src} />
         <img
           aria-hidden="true"
           decoding="async"
-          src="/assets/images/cabinets2.jpg"
+          src={front.src}
           alt="cabinets"
           loading="lazy"
           width="400"

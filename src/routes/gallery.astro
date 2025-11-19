@@ -7,6 +7,12 @@ import { t } from "i18n:astro";
 // Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Landing (for rendering)
 import { getOptimizedImage } from "@utils/utils";
 import landingImage from "@assets/images/landing.jpg"; // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+import first from "@assets/images/gallery-page/1.jpg";
+import second from "@assets/images/gallery-page/2.jpg";
+import third from "@assets/images/gallery-page/3.jpg";
+import fourth from "@assets/images/gallery-page/4.jpg";
+import fifth from "@assets/images/gallery-page/5.jpg";
+import sixth from "@assets/images/gallery-page/6.jpg";
 const optimizedImage = await getOptimizedImage(landingImage);
 ---
 
@@ -33,177 +39,92 @@ const optimizedImage = await getOptimizedImage(landingImage);
       <!--Picture 1-->
       <div class="cs-picture-group">
         <picture class="cs-image">
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-one.png"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-one.png"
-          />
+          <source media="(max-width: 600px)" srcset={first.src} />
+          <source media="(min-width: 601px)" srcset={first.src} />
           <img
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-one.png0"
+            src={first.src}
             height="400"
             height="400"
             alt="day care"
           />
         </picture>
-        <div class="cs-info">
-          <h3 class="cs-h3">Die Paper Craft</h3>
-          <p class="cs-item-text">Birthday, Kids, Daycare, Kindergarten</p>
-        </div>
       </div>
       <!--Picture 2-->
       <div class="cs-picture-group">
         <picture class="cs-image">
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-two.png"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-two.png"
-          />
+          <source media="(max-width: 600px)" srcset={second.src} />
+          <source media="(min-width: 601px)" srcset={second.src} />
           <img
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-two.png5"
+            src={second.src}
             height="400"
             height="400"
             alt="day care"
           />
         </picture>
-        <div class="cs-info">
-          <h3 class="cs-h3">Die Paper Craft</h3>
-          <p class="cs-item-text">Birthday, Kids, Daycare, Kindergarten</p>
-        </div>
       </div>
       <!--Picture 3-->
       <div class="cs-picture-group">
         <picture class="cs-image">
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-three.png"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-three.png"
-          />
+          <source media="(max-width: 600px)" srcset={third.src} />
+          <source media="(min-width: 601px)" srcset={third.src} />
           <img
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-three.png5"
+            src={third.src}
             height="400"
             height="400"
             alt="day care"
           />
         </picture>
-        <div class="cs-info">
-          <h3 class="cs-h3">Die Paper Craft</h3>
-          <p class="cs-item-text">Birthday, Kids, Daycare, Kindergarten</p>
-        </div>
       </div>
       <!--Picture 4-->
       <div class="cs-picture-group">
         <picture class="cs-image">
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-four.png"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-four.png"
-          />
+          <source media="(max-width: 600px)" srcset={fourth.src} />
+          <source media="(min-width: 601px)" srcset={fourth.src} />
           <img
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-four.png5"
+            src={fourth.src}
             height="400"
             height="400"
             alt="day care"
           />
         </picture>
-        <div class="cs-info">
-          <h3 class="cs-h3">Die Paper Craft</h3>
-          <p class="cs-item-text">Birthday, Kids, Daycare, Kindergarten</p>
-        </div>
       </div>
       <!--Picture 5-->
       <div class="cs-picture-group">
         <picture class="cs-image">
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-five.png"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-five.png"
-          />
+          <source media="(max-width: 600px)" srcset={fifth.src} />
+          <source media="(min-width: 601px)" srcset={fifth.src} />
           <img
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-five.png5"
+            src={fifth.src}
             height="400"
             height="400"
             alt="day care"
           />
         </picture>
-        <div class="cs-info">
-          <h3 class="cs-h3">Die Paper Craft</h3>
-          <p class="cs-item-text">Birthday, Kids, Daycare, Kindergarten</p>
-        </div>
       </div>
       <!--Picture 6-->
       <div class="cs-picture-group">
         <picture class="cs-image">
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-six.png"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-six.png"
-          />
+          <source media="(max-width: 600px)" srcset={sixth.src} />
+          <source media="(min-width: 601px)" srcset={sixth.src} />
           <img
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-six.png0"
+            src={sixth.src}
             height="400"
             height="400"
             alt="day care"
           />
         </picture>
-        <div class="cs-info">
-          <h3 class="cs-h3">Die Paper Craft</h3>
-          <p class="cs-item-text">Birthday, Kids, Daycare, Kindergarten</p>
-        </div>
-      </div>
-      <!--Picture 7-->
-      <div class="cs-picture-group">
-        <picture class="cs-image">
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-seven.png"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-seven.png"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-gallery-seven.png0"
-            height="400"
-            height="400"
-            alt="day care"
-          />
-        </picture>
-        <div class="cs-info">
-          <h3 class="cs-h3">Die Paper Craft</h3>
-          <p class="cs-item-text">Birthday, Kids, Daycare, Kindergarten</p>
-        </div>
       </div>
     </div>
   </section>
