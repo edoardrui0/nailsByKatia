@@ -1,5 +1,5 @@
 ---
-// import client from "@data/client.json";
+import client from "@data/client.json";
 // import navData from "@data/navData";
 import { getCurrentYear } from "@utils/utils";
 import { getLocalePath, t } from "i18n:astro";
@@ -14,7 +14,7 @@ const currentYear = getCurrentYear();
   <div class="cs-container">
     <!--Top Section-->
     <div class="cs-top">
-      <!--Warpped logo in wrapper div so that div can be 100% width to force the lists below it to stay in their line.  The cs-logo can maintain its' max width. we didn't want it 100% width becuase then the blank area to the right of the logo will also result in a click and hover event. -->
+      <!--Warped logo in wrapper div so that div can be 100% width to force the lists below it to stay in their line.  The cs-logo can maintain its' max width. we didn't want it 100% width because then the blank area to the right of the logo will also result in a click and hover event. -->
       <div class="cs-logo-wrapper">
         <a href={getLocalePath("/")} class="cs-logo">
           <img
@@ -38,67 +38,7 @@ const currentYear = getCurrentYear();
             >
               <img
                 class="cs-social-icon cs-default"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-facebook.svg"
-                alt="icon"
-                loading="lazy"
-                decoding="async"
-                width="24"
-                height="24"
-                aria-hidden="true"
-              />
-            </a>
-          </li>
-          <li class="cs-social-li">
-            <a
-              href=""
-              class="cs-social-link"
-              rel="noopener"
-              target="_blank"
-              aria-label=""
-            >
-              <img
-                class="cs-social-icon cs-default"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-linkedin.svg"
-                alt="icon"
-                loading="lazy"
-                decoding="async"
-                width="24"
-                height="24"
-                aria-hidden="true"
-              />
-            </a>
-          </li>
-          <li class="cs-social-li">
-            <a
-              href=""
-              class="cs-social-link"
-              rel="noopener"
-              target="_blank"
-              aria-label=""
-            >
-              <img
-                class="cs-social-icon cs-default"
                 src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-derm-footer.svg"
-                alt="icon"
-                loading="lazy"
-                decoding="async"
-                width="24"
-                height="24"
-                aria-hidden="true"
-              />
-            </a>
-          </li>
-          <li class="cs-social-li">
-            <a
-              href=""
-              class="cs-social-link"
-              rel="noopener"
-              target="_blank"
-              aria-label=""
-            >
-              <img
-                class="cs-social-icon cs-default"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-tiktok.svg"
                 alt="icon"
                 loading="lazy"
                 decoding="async"
@@ -115,19 +55,30 @@ const currentYear = getCurrentYear();
           <span class="cs-header">Contact Info</span>
         </li>
         <li class="cs-li">
-          <a href="" class="cs-link" target="_blank" rel="noopener">
-            4321 Birch Street, Ste 140, Newport Beach, CA 92660
+          <a
+            href={client.address.mapLink}
+            class="cs-link"
+            target="_blank"
+            rel="noopener"
+          >
+            {client.address.lineOne}
+            <br />
+            <span class="cs-block">
+              {client.address.city},
+              {client.address.state}
+              {client.address.zip}
+            </span>
           </a>
         </li>
         <li class="cs-li">
-          <a href="mailto:info@example.com" class="cs-link">
-            info@stitchskin.com
+          <a href={`tel:${client.phoneForTel}`} class="cs-link">
+            {client.phoneFormatted}
           </a>
         </li>
       </ul>
       <ul class="cs-ul">
         <li class="cs-li">
-          <span class="cs-header">Office Hours</span>
+          <span class="cs-header">Hours</span>
         </li>
         <li class="cs-li">Monday to Friday</li>
         <li class="cs-li">9am - 5pm</li>
@@ -138,19 +89,24 @@ const currentYear = getCurrentYear();
       <!--Navigation-->
       <ul class="cs-nav">
         <li class="cs-nav-li">
-          <a href="" class="cs-nav-link">Home</a>
+          <a href={getLocalePath("/")} class="cs-nav-link">Home</a>
         </li>
         <li class="cs-nav-li">
-          <a href="" class="cs-nav-link">About</a>
+          <a href={getLocalePath("/about")} class="cs-nav-link">About</a>
         </li>
         <li class="cs-nav-li">
-          <a href="" class="cs-nav-link">Services</a>
+          <a href={getLocalePath("/gallery")} class="cs-nav-link">Gallery</a>
         </li>
         <li class="cs-nav-li">
-          <a href="" class="cs-nav-link">Classes</a>
+          <a href={getLocalePath("/services/gel-x")} class="cs-nav-link"
+            >Services</a
+          >
         </li>
         <li class="cs-nav-li">
-          <a href="" class="cs-nav-link">Blog</a>
+          <a href={getLocalePath("/prices")} class="cs-nav-link">Prices</a>
+        </li>
+        <li class="cs-nav-li">
+          <a href={getLocalePath("/contact")} class="cs-nav-link">Contact</a>
         </li>
       </ul>
       <span class="cs-copyright">
@@ -225,7 +181,7 @@ const currentYear = getCurrentYear();
       padding: var(--sectionPadding);
       padding-top: 0;
       padding-bottom: (40/16rem);
-      background-color: #f6eddf;
+      background-color: #1a1a1a;
       padding-top: 5rem;
 
       .cs-container {
@@ -377,10 +333,10 @@ const currentYear = getCurrentYear();
       }
 
       .cs-social-link {
-        width: (40/16rem);
-        height: auto;
+        // width: (40/16rem);
+        // height: auto;
         padding: (12/16rem);
-        background-color: #ded1bd;
+        background-color: var(--secondary);
         border-radius: (32/16rem);
         display: flex;
         justify-content: center;
@@ -397,8 +353,10 @@ const currentYear = getCurrentYear();
       }
 
       .cs-social-icon {
-        width: (16/16rem);
-        height: (16/16rem);
+        // width: (16/16rem);
+        // height: (16/16rem);
+        width: 2rem;
+        height: 2rem;
         display: block;
       }
 
@@ -430,7 +388,7 @@ const currentYear = getCurrentYear();
         line-height: 1.2em;
         /* 16px - 24px bottom */
         margin: 0 0 clamp(1rem, 3.5vw, 1.5rem) 0;
-        color: var(--headerColor);
+        color: var(--bodyTextColorWhite);
         display: block;
       }
 
@@ -440,7 +398,7 @@ const currentYear = getCurrentYear();
         line-height: 1.5em;
         text-decoration: none;
         margin: 0;
-        color: var(--bodyTextColor);
+        color: var(--bodyTextColorWhite);
         display: block;
         position: relative;
         z-index: 1;
@@ -501,7 +459,7 @@ const currentYear = getCurrentYear();
         line-height: 1.5em;
         text-decoration: none;
         margin: 0;
-        color: var(--bodyTextColor);
+        color: var(--bodyTextColorWhite);
         position: relative;
 
         &:hover {
@@ -533,7 +491,7 @@ const currentYear = getCurrentYear();
         line-height: 1.5em;
         text-align: center;
         margin: 0;
-        color: var(--bodyTextColor);
+        color: var(--bodyTextColorWhite);
       }
 
       .cs-copyright-link {
