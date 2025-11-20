@@ -1,15 +1,15 @@
 {
 	"name": "Nails By Katia",
-	"email": "help@codestitch.app",
-	"phoneForTel": "555-779-4407",
-	"phoneFormatted": "(555) 779-4407",
+	"instagram": "@nails_bykatia",
+	"phoneForTel": "813-562-6412",
+	"phoneFormatted": "(813) 562-6412",
 	"address": {
-		"lineOne": "First Address Line",
+		"lineOne": "1426 Longwood Loop",
 		"lineTwo": "Second Address Line",
 		"city": "Tampa",
 		"state": "FL",
 		"zip": "33619",
-		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+		"mapLink": "https://maps.app.goo.gl/ai6nYtfv1r1StZry7"
 	},
 	"domain": "www.codestitch.app"
 }

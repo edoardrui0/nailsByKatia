@@ -3,6 +3,7 @@ import { t, getLocalePath } from "i18n:astro";
 // Import the component and all the images you want to use with it
 import CSPicture from "@components/TemplateComponents/CSPicture.astro";
 import CTABackgroundIMG from "@assets/images/CTA/cta-background.jpg";
+import CTABackgroundMobileIMG from "@assets/images/CTA/cta-background-m.jpg";
 ---
 
 <!-- CTA -->
@@ -24,7 +25,7 @@ import CTABackgroundIMG from "@assets/images/CTA/cta-background.jpg";
     </div>
 
     <CSPicture
-      mobileImgUrl={CTABackgroundIMG}
+      mobileImgUrl={CTABackgroundMobileIMG}
       mobileMediaWidth="600px"
       desktopImgUrl={CTABackgroundIMG}
       desktopMediaWidth="601px"
@@ -128,11 +129,6 @@ import CTABackgroundIMG from "@assets/images/CTA/cta-background.jpg";
         }
       }
 
-      .cs-button-container {
-        display: flex;
-        gap: 5px;
-      }
-
       .cs-button-solid {
         font-size: (16/16rem);
         /* 46px - 56px */
@@ -205,6 +201,7 @@ import CTABackgroundIMG from "@assets/images/CTA/cta-background.jpg";
         z-index: 1;
       }
       .cs-button-container {
+        display: flex;
         gap: 20px;
       }
     }

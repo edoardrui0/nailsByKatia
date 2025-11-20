@@ -88,8 +88,12 @@ const optimizedImage = await getOptimizedImage(landingImage);
       </form>
       <div class="cs-right-section">
         <!--Email-->
-        <span class="cs-header">{t("contact:form.email")}</span>
-        <a class="cs-link" href={`mailto:${client.email}`}>{client.email}</a>
+        <span class="cs-header">{t("contact:form.instagram")}</span>
+        <a
+          class="cs-link"
+          href="https://www.instagram.com/nails_bykatia?igsh=MTZvbXJybnB4MG9ydQ=="
+          >{client.instagram}</a
+        >
         <!--Phone-->
         <span class="cs-header">{t("contact:form.phone")}</span>
         <a class="cs-link" href={`tel:${client.phoneForTel}`}
@@ -98,12 +102,10 @@ const optimizedImage = await getOptimizedImage(landingImage);
         <!--Address-->
         <span class="cs-header">{t("contact:form.address")}</span>
         <a class="cs-link" href={client.address.mapLink}>
-          {client.address.lineOne},
-          <br />
-          {client.address.lineTwo},
+          {client.address.lineOne}
           <br />
           <span class="cs-block">
-            {client.address.city}
+            {client.address.city},
             {client.address.state}
             {client.address.zip}
           </span>

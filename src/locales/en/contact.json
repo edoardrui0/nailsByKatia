@@ -6,6 +6,7 @@
     "form": {
         "name": "Name",
         "email": "Email",
+        "instagram": "Instagram",
         "phone": "Phone",
         "how": "How did you find us?",
         "message": "Message",
