@@ -10,7 +10,7 @@ import { getLocalePath, t } from "i18n:astro";
     <!--Nav Logo-->
     <a href={getLocalePath("/")} class="cs-logo" aria-label="back to home">
       <img
-        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/leaf-icon.png"
+        src="/src/assets/images/logos/katiaLogo100.png"
         width="60"
         height="60"
         aria-hidden="true"
@@ -296,7 +296,7 @@ import { getLocalePath, t } from "i18n:astro";
       .cs-logo {
         width: auto;
         /* 56px - 80px */
-        height: clamp(3.5rem, 5vw, 5rem);
+        height: clamp(5rem, 5vw, 5rem);
         margin: 0 auto 0 0;
         padding: 0;
         /* prevents padding and border from affecting height and width */
@@ -811,7 +811,7 @@ import { getLocalePath, t } from "i18n:astro";
 
       .cs-logo {
         width: auto;
-        height: (60/16rem);
+        height: (60/12rem);
         /* margin-right auto pushes everything away from it to the right */
         margin: 0 auto 0 0;
         padding: 0;
