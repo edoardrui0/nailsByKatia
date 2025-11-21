@@ -8,6 +8,7 @@ import { t } from "i18n:astro";
 import { getOptimizedImage } from "@utils/utils";
 import katiaHeadshot from "@assets/images/about-page/katia-headshot.jpg"; // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
 import landingImage from "@assets/images/landing.jpg";
+import logo200 from "@assets/images/logos/katiaLogo200.png";
 const optimizedImage = await getOptimizedImage(landingImage);
 const optimizedHeadshot = await getOptimizedImage(katiaHeadshot);
 ---
@@ -63,7 +64,7 @@ const optimizedHeadshot = await getOptimizedImage(katiaHeadshot);
             aria-hidden="true"
             loading="lazy"
             decoding="async"
-            src="/src/assets/images/logos/katiaLogo200.png"
+            src={logo200.src}
             alt="person"
             width="193"
             height="197"

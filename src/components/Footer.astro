@@ -5,6 +5,7 @@ import { getCurrentYear } from "@utils/utils";
 import { getLocalePath, t } from "i18n:astro";
 
 const currentYear = getCurrentYear();
+import logo from "@assets/images/logos/katiaLogo100.png";
 ---
 
 <!--Notes: Make the section above this stitch have a:
@@ -18,7 +19,7 @@ const currentYear = getCurrentYear();
       <div class="cs-logo-wrapper">
         <a href={getLocalePath("/")} class="cs-logo">
           <img
-            src="/src/assets/images/logos/katiaLogo100.png"
+            src={logo.src}
             alt="logo"
             aria-hidden="true"
             loading="lazy"
