@@ -1,8 +1,7 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import CTA from "@components/CTA.astro";
-import { t } from "i18n:astro";
-// import { getLocalePath, t } from "i18n:astro";
+import { getLocalePath, t } from "i18n:astro";
 
 import Services from "@components/ServiceSection.astro";
 import GalleryHero from "@components/GalleryHero.astro";
@@ -74,7 +73,7 @@ const optimizedRubber = await getOptimizedImage(rubber);
     <div class="cs-container">
       <ul class="cs-card-group">
         <li class="cs-item">
-          <a href="" class="cs-link">
+          <a href={getLocalePath("/services/gel-x")} class="cs-link">
             <picture class="cs-icon-wrapper">
               <img
                 class="cs-icon"
@@ -106,7 +105,7 @@ const optimizedRubber = await getOptimizedImage(rubber);
           </picture>
         </li>
         <li class="cs-item">
-          <a href="" class="cs-link">
+          <a href={getLocalePath("/services/builder-gel")} class="cs-link">
             <picture class="cs-icon-wrapper">
               <img
                 class="cs-icon"
@@ -138,7 +137,7 @@ const optimizedRubber = await getOptimizedImage(rubber);
           </picture>
         </li>
         <li class="cs-item">
-          <a href="" class="cs-link">
+          <a href={getLocalePath("/services/deluxe-pedicure")} class="cs-link">
             <picture class="cs-icon-wrapper">
               <img
                 class="cs-icon"
@@ -170,7 +169,7 @@ const optimizedRubber = await getOptimizedImage(rubber);
           </picture>
         </li>
         <li class="cs-item">
-          <a href="" class="cs-link">
+          <a href={getLocalePath("/prices")} class="cs-link">
             <picture class="cs-icon-wrapper">
               <img
                 class="cs-icon"
