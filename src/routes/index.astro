@@ -18,12 +18,15 @@ import pedicure from "@assets/images/hero-page/pedicure.jpeg";
 import rubber from "@assets/images/hero-page/rubber.jpeg";
 
 // OPTIMIZED IMAGES
-const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage);
-const optimizedLandingImage = await getOptimizedImage(landingImage);
-const optimizedGel = await getOptimizedImage(gel);
-const optimizedBuilder = await getOptimizedImage(builder);
-const optimizedPedicure = await getOptimizedImage(pedicure);
-const optimizedRubber = await getOptimizedImage(rubber);
+const optimizedMobileLandingImage = await getOptimizedImage(
+  mobileLandingImage,
+  600,
+);
+const optimizedLandingImage = await getOptimizedImage(landingImage, 1400);
+const optimizedGel = await getOptimizedImage(gel, 700);
+const optimizedBuilder = await getOptimizedImage(builder, 700);
+const optimizedPedicure = await getOptimizedImage(pedicure, 700);
+const optimizedRubber = await getOptimizedImage(rubber, 700);
 ---
 
 <BaseLayout

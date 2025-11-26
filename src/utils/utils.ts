@@ -13,11 +13,13 @@ export function getCurrentYear(): number {
 
 import { getImage } from "astro:assets";
 
-export async function getOptimizedImage(image: ImageMetadata) {
+// width is the target max width of the output file
+export async function getOptimizedImage(image: ImageMetadata, width = 1400) {
   const optimizedImage = await getImage({
     src: image,
-    format: "webp",
-    loading: "eager",
+    width,          // this is the key change
+    format: "webp", // keep or adjust as you want
+    quality: 100,
   });
 
   return optimizedImage;
