@@ -816,19 +816,6 @@ const optimizedRubber = await getOptimizedImage(rubber, 700);
     // }
   }
 
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #hero {
-        .cs-background {
-          &:before {
-            opacity: 0.8;
-          }
-        }
-      }
-    }
-  }
-
   /*-- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/
@@ -915,24 +902,6 @@ const optimizedRubber = await getOptimizedImage(rubber, 700);
 
       .card {
         max-width: (357/16em);
-      }
-    }
-  }
-
-  /* Dark mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #services {
-        background: var(--medium);
-
-        picture {
-          background: var(--primaryDark);
-        }
-
-        h2 {
-          font-weight: bold;
-          color: #fff;
-        }
       }
     }
   }
